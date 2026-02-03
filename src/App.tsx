@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
-import './App.css';
+import styles from './_app.module.scss';
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ function App() {
 				>
 					<img
 						src={viteLogo}
-						className='logo'
+						className={styles.logo}
 						alt='Vite logo'
 					/>
 				</a>
@@ -27,13 +27,13 @@ function App() {
 				>
 					<img
 						src={reactLogo}
-						className='logo react'
+						className={styles.logo}
 						alt='React logo'
 					/>
 				</a>
 			</div>
 			<h1>Vite + React</h1>
-			<div className='card'>
+			<div className={styles.card}>
 				<button
 					type='button'
 					onClick={() => setCount((count) => count + 1)}
@@ -44,7 +44,9 @@ function App() {
 					Edit <code>src/App.tsx</code> and save to test HMR
 				</p>
 			</div>
-			<p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
+			<p className={styles['read-the-docs']}>
+				Click on the Vite and React logos to learn more
+			</p>
 		</>
 	);
 }
