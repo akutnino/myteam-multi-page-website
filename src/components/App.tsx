@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from './assets/vite.svg';
-import styles from './_app.module.scss';
+import reactLogo from '../assets/react.svg';
+import viteLogo from '../assets/vite.svg';
+import styles from '../styles/components/_app.module.scss';
 
 function App() {
 	const [count, setCount] = useState(0);
