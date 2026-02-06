@@ -1,0 +1,64 @@
+@use 'functions' as function;
+
+@mixin text-preset-1 {
+	font: var(--font-Livvic-Bold);
+	font-size: function.rem(100);
+	line-height: 100%;
+	letter-spacing: function.rem(0);
+}
+
+@mixin text-preset-2 {
+	font: var(--font-Livvic-Bold);
+	font-size: function.rem(64);
+	line-height: 100%;
+	letter-spacing: function.rem(0);
+}
+
+@mixin text-preset-3 {
+	font: var(--font-Livvic-Bold);
+	font-size: function.rem(48);
+	line-height: 100%;
+	letter-spacing: function.rem(0);
+}
+
+@mixin text-preset-4 {
+	font: var(--font-Livvic-Bold);
+	font-size: function.rem(40);
+	line-height: 100%;
+	letter-spacing: function.rem(0);
+}
+
+@mixin text-preset-5 {
+	font: var(--font-Livvic-Bold);
+	font-size: function.rem(32);
+	line-height: 100%;
+	letter-spacing: function.rem(0);
+}
+
+@mixin text-preset-6 {
+	font: var(--font-Livvic-Semibold);
+	font-size: function.rem(18);
+	line-height: 155%;
+	letter-spacing: function.rem(0);
+}
+
+@mixin text-preset-7-semibold {
+	font: var(--font-Livvic-Semibold);
+	font-size: function.rem(15);
+	line-height: 186%;
+	letter-spacing: function.rem(0);
+}
+
+@mixin text-preset-7-medium-italic {
+	font: var(--font-Livvic-Medium-Italic);
+	font-size: function.rem(15);
+	line-height: 166%;
+	letter-spacing: function.rem(0);
+}
+
+@mixin text-preset-8 {
+	font: var(--font-Livvic-Medium-Italic);
+	font-size: function.rem(13);
+	line-height: 140%;
+	letter-spacing: function.rem(0);
+}
