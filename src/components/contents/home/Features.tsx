@@ -1,5 +1,5 @@
 function Features() {
-	return;
+	return <section></section>;
 }
 
 export default Features;
