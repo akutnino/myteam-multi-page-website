@@ -1,5 +1,11 @@
+import ContactHeader from '../contents/contact/ContactHeader.tsx';
+
 function Contact() {
-	return;
+	return (
+		<>
+			<ContactHeader />
+		</>
+	);
 }
 
 export default Contact;
