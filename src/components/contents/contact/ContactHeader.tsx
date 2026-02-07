@@ -1,5 +1,5 @@
 function ContactHeader() {
-	return;
+	return <header></header>;
 }
 
 export default ContactHeader;
