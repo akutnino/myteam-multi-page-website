@@ -1,5 +1,5 @@
 function Testimonials() {
-	return;
+	return <section></section>;
 }
 
 export default Testimonials;
