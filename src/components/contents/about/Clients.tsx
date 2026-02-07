@@ -1,5 +1,5 @@
 function Clients() {
-	return;
+	return <section></section>;
 }
 
 export default Clients;
