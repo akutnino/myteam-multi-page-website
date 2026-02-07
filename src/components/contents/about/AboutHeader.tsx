@@ -1,5 +1,5 @@
 function AboutHeader() {
-	return;
+	return <header></header>;
 }
 
 export default AboutHeader;
