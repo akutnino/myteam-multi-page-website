@@ -1,5 +1,5 @@
 function Directors() {
-	return;
+	return <section></section>;
 }
 
 export default Directors;
