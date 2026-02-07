@@ -1,5 +1,5 @@
 function CallToAction() {
-	return;
+	return <section></section>;
 }
 
 export default CallToAction;
