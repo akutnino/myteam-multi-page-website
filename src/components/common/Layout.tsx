@@ -10,7 +10,7 @@ import CallToAction from './CallToAction.tsx';
 
 function Layout() {
 	const location: Location = useLocation();
-	const isPathnameContact: boolean = location.pathname === 'contact';
+	const isPathnameContact: boolean = location.pathname === '/contact';
 
 	return (
 		<ErrorBoundary
