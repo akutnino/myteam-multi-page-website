@@ -1,5 +1,5 @@
 function MobileDrawer() {
-	return;
+	return <aside></aside>;
 }
 
 export default MobileDrawer;
