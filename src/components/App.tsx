@@ -9,7 +9,7 @@ const Contact = lazy(() => import('./pages/Contact.tsx'));
 
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename='/'>
 			<Routes>
 				<Route
 					path='/'
