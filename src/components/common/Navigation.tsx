@@ -1,5 +1,5 @@
 function Navigation() {
-	return;
+	return <nav></nav>;
 }
 
 export default Navigation;
