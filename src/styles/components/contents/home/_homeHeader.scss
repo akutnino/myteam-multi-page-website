@@ -1,0 +1,57 @@
+@use '/src/styles/utils/' as util;
+
+.homeHeader {
+	background-color: var(--color-Teal-800);
+	position: absolute;
+	width: 100%;
+
+	&__section {
+		display: flex;
+		justify-content: space-between;
+		max-width: 80%;
+		margin-top: util.rem(135);
+		margin-inline: auto;
+		padding: 0 util.rem(40);
+	}
+
+	&__header {
+		color: var(--color-Neutral-0);
+		max-width: util.rem(600);
+		@include util.text-preset-1;
+	}
+
+	&__span {
+		color: var(--color-Rose-500);
+	}
+
+	&__div {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: util.rem(450);
+	}
+
+	&__rectangle {
+		width: util.rem(50);
+		height: util.rem(4);
+		background-color: var(--color-Cyan-100);
+	}
+
+	&__paragraph {
+		color: var(--color-Neutral-0);
+		@include util.text-preset-6;
+	}
+
+	&__background--first {
+		position: relative;
+		bottom: util.rem(200);
+		right: util.rem(100);
+	}
+
+	&__background--second {
+		display: flex;
+		justify-self: end;
+		margin-right: 10%;
+		padding: 0 util.rem(40);
+	}
+}
