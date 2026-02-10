@@ -1,0 +1,57 @@
+@use '/src/styles/utils/' as util;
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 80%;
+	height: util.rem(44);
+	margin-top: util.rem(73);
+	margin-inline: auto;
+	padding: 0 util.rem(40);
+
+	&__div {
+		display: flex;
+		align-items: center;
+		gap: util.rem(80);
+	}
+
+	&__logo {
+		height: max-content;
+	}
+
+	&__list {
+		display: flex;
+		list-style-type: none;
+		gap: util.rem(40);
+		height: util.rem(28);
+	}
+
+	&__item {
+		height: util.rem(28);
+	}
+
+	&__link {
+		color: var(--color-Neutral-0);
+		@include util.text-preset-6;
+
+		&:hover {
+			color: var(--color-Rose-500);
+		}
+	}
+
+	&__contact {
+		border-color: var(--color-Neutral-0);
+		border-width: util.rem(2);
+		border-style: solid;
+		border-radius: util.rem(50);
+		padding: util.rem(8) util.rem(32);
+		color: var(--color-Neutral-0);
+		@include util.text-preset-6;
+
+		&:hover {
+			background-color: var(--color-Neutral-0);
+			color: var(--color-Neutral-950);
+		}
+	}
+}
