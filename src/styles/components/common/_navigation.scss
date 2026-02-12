@@ -5,10 +5,10 @@
 	justify-content: space-between;
 	align-items: center;
 	max-width: 80%;
-	height: util.rem(44);
-	margin-top: util.rem(73);
 	margin-inline: auto;
+	margin-top: util.rem(73);
 	padding: 0 util.rem(40);
+	height: util.rem(44);
 
 	&__div {
 		display: flex;
