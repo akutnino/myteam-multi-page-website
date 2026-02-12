@@ -2,7 +2,7 @@
 
 .homeHeader {
 	background-color: var(--color-Teal-800);
-	position: absolute;
+	overflow: auto;
 	width: 100%;
 
 	&__section {
