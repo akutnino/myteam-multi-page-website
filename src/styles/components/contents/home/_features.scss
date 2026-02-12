@@ -1,0 +1,76 @@
+@use '/src/styles/utils/' as util;
+
+.features {
+	background-color: var(--color-Teal-900);
+	overflow: hidden;
+	position: relative;
+
+	&__div--outer {
+		display: flex;
+		flex-direction: column;
+		max-width: 80%;
+		margin-inline: auto;
+		align-self: center;
+		margin-top: util.rem(138);
+		margin-bottom: util.rem(138);
+		padding: 0 util.rem(40);
+		gap: util.rem(56);
+	}
+
+	&__rectangle {
+		width: util.rem(50);
+		height: util.rem(4);
+		background-color: var(--color-Rose-500);
+	}
+
+	&__div--main {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__h1 {
+		color: var(--color-Neutral-0);
+		max-width: util.rem(445);
+		@include util.text-preset-3;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: util.rem(25);
+		list-style-type: none;
+		max-width: util.rem(550);
+	}
+
+	&__item {
+		display: flex;
+		gap: util.rem(25);
+	}
+
+	&__img {
+		width: util.rem(75);
+		height: util.rem(75);
+	}
+
+	&__div--item {
+		display: flex;
+		flex-direction: column;
+		gap: util.rem(20);
+	}
+
+	&__h2 {
+		color: var(--color-Rose-500);
+		@include util.text-preset-6;
+	}
+
+	&__paragraph {
+		color: var(--color-Neutral-50);
+		@include util.text-preset-7-semibold;
+	}
+
+	&__background--first {
+		position: absolute;
+		right: util.rem(-100);
+		bottom: util.rem(0);
+	}
+}
