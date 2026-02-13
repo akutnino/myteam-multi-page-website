@@ -1,0 +1,94 @@
+@use '/src/styles/utils/' as util;
+
+.testimonials {
+	background-color: var(--color-Teal-850);
+	overflow: hidden;
+	position: relative;
+
+	&__div--outer {
+		max-width: 80%;
+		margin-inline: auto;
+		margin-top: util.rem(146);
+		margin-bottom: util.rem(146);
+		padding: 0 util.rem(40);
+	}
+
+	&__h1 {
+		color: var(--color-Neutral-0);
+		justify-self: center;
+		text-align: center;
+		max-width: util.rem(930);
+		margin-bottom: util.rem(60);
+		@include util.text-preset-3;
+	}
+
+	&__span {
+		color: var(--color-Cyan-100);
+	}
+
+	&__list {
+		list-style-type: none;
+		display: flex;
+		gap: util.rem(30);
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		gap: util.rem(5);
+	}
+
+	&__img--quotes {
+		justify-self: center;
+	}
+
+	&__paragraph {
+		position: relative;
+		bottom: util.rem(20);
+		color: var(--color-Neutral-0);
+		text-align: center;
+		@include util.text-preset-7-semibold;
+	}
+
+	&__div--user {
+		display: flex;
+		flex-direction: column;
+		gap: util.rem(30);
+	}
+
+	&__div--details {
+		justify-items: center;
+	}
+
+	&__h3--username {
+		color: var(--color-Cyan-100);
+		@include util.text-preset-6;
+	}
+
+	&__h3--userposition {
+		@include util.text-preset-8;
+		color: var(--color-Neutral-0);
+		font-style: italic;
+	}
+
+	&__img--avatar {
+		align-self: center;
+		width: util.rem(70);
+		height: util.rem(70);
+		border-radius: util.rem(50);
+		border: util.rem(2) solid var(--color-Cyan-100);
+	}
+
+	&__background--first {
+		position: absolute;
+		top: util.rem(0);
+		left: util.rem(0);
+	}
+
+	&__background--second {
+		position: absolute;
+		bottom: util.rem(0);
+		right: util.rem(0);
+	}
+}
