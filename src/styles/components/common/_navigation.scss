@@ -48,10 +48,5 @@
 		padding: util.rem(8) util.rem(32);
 		color: var(--color-Neutral-0);
 		@include util.text-preset-6;
-
-		&:hover {
-			background-color: var(--color-Neutral-0);
-			color: var(--color-Neutral-950);
-		}
 	}
 }
