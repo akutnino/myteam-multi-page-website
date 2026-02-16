@@ -1,4 +1,7 @@
 import { Link } from 'react-router';
+
+import ContactButton from './ContactButton.tsx';
+
 import logo from '/src/assets/logo.svg';
 
 function Navigation() {
@@ -33,12 +36,15 @@ function Navigation() {
 				</ul>
 			</div>
 
-			<Link
+			<ContactButton
 				className='navigation__contact'
-				to={'/contact'}
+				hoverStyles={{
+					backgroundColor: '--color-Neutral-0',
+					color: '--color-Teal-950',
+				}}
 			>
 				contact us
-			</Link>
+			</ContactButton>
 		</nav>
 	);
 }
