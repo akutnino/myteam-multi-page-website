@@ -1,0 +1,34 @@
+@use '/src/styles/utils/' as util;
+
+.callToAction {
+	background-color: var(--color-Rose-500);
+	overflow: hidden;
+	position: relative;
+
+	&__div {
+		display: flex;
+		margin: util.rem(80) auto;
+		max-width: util.rem(910);
+		justify-content: space-between;
+	}
+
+	&__h1 {
+		color: var(--color-Teal-900);
+		@include util.text-preset-3;
+	}
+
+	&__contact {
+		border-color: var(--color-Teal-900);
+		border-width: util.rem(2);
+		border-style: solid;
+		border-radius: util.rem(50);
+		padding: util.rem(8) util.rem(32);
+		color: var(--color-Teal-900);
+		@include util.text-preset-6;
+	}
+
+	&__logo {
+		position: absolute;
+		bottom: util.rem(0);
+	}
+}
