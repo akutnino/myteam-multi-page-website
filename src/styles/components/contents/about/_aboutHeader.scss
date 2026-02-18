@@ -1,0 +1,47 @@
+@use '/src/styles/utils/' as util;
+
+.aboutHeader {
+	background-color: var(--color-Teal-800);
+	overflow: hidden;
+	position: relative;
+
+	&__section {
+		display: flex;
+		max-width: 80%;
+		margin-inline: auto;
+		margin-top: util.rem(125);
+		margin-bottom: util.rem(125);
+		padding: 0 util.rem(40);
+		gap: util.rem(45);
+	}
+
+	&__header {
+		color: var(--color-Neutral-0);
+		min-width: util.rem(350);
+		height: fit-content;
+		@include util.text-preset-2;
+	}
+
+	&__div {
+		display: flex;
+		flex-direction: column;
+		gap: util.rem(50);
+	}
+
+	&__rectangle {
+		width: util.rem(50);
+		height: util.rem(4);
+		background-color: var(--color-Rose-500);
+	}
+
+	&__paragraph {
+		color: var(--color-Neutral-0);
+		@include util.text-preset-6;
+	}
+
+	&__background--first {
+		position: absolute;
+		bottom: util.rem(0);
+		right: util.rem(-100);
+	}
+}
