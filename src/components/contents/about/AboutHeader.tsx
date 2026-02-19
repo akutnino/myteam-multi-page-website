@@ -1,3 +1,4 @@
+import BackgroundImage from '../../common/BackgroundImage.tsx';
 import Navigation from '../../common/Navigation.tsx';
 
 import bg_pattern_about_1_mobile_nav_1 from '/src/assets/bg-pattern-about-1-mobile-nav-1.svg';
@@ -21,11 +22,9 @@ function AboutHeader() {
 				</div>
 			</section>
 
-			<img
+			<BackgroundImage
 				className='aboutHeader__background--first'
 				src={bg_pattern_about_1_mobile_nav_1}
-				alt='bg-pattern-about-1-mobile-nav-1.svg'
-				fetchPriority='high'
 			/>
 		</header>
 	);
