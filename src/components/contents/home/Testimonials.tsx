@@ -1,3 +1,5 @@
+import BackgroundImage from '../../common/BackgroundImage.tsx';
+
 import icon_quotes from '/src/assets/icon-quotes.svg';
 import avatar_kady from '/src/assets/avatar-kady.jpg';
 import avatar_aiysha from '/src/assets/avatar-aiysha.jpg';
@@ -103,18 +105,14 @@ function Testimonials() {
 				</ul>
 			</div>
 
-			<img
+			<BackgroundImage
 				className='testimonials__background--first'
 				src={bg_pattern_home_4_about_3}
-				alt='bg-pattern-home-4-about-3.svg'
-				fetchPriority='high'
 			/>
 
-			<img
+			<BackgroundImage
 				className='testimonials__background--second'
 				src={bg_pattern_home_5}
-				alt='bg-pattern-home-5.svg'
-				fetchPriority='high'
 			/>
 		</section>
 	);

@@ -1,3 +1,4 @@
+import BackgroundImage from '../../common/BackgroundImage.tsx';
 import Navigation from '../../common/Navigation.tsx';
 
 import bg_pattern_home_1 from '/src/assets/bg-pattern-home-1.svg';
@@ -24,18 +25,14 @@ function HomeHeader() {
 				</div>
 			</section>
 
-			<img
+			<BackgroundImage
 				className='homeHeader__background--first'
 				src={bg_pattern_home_1}
-				alt='bg-pattern-home-1.svg'
-				fetchPriority='high'
 			/>
 
-			<img
+			<BackgroundImage
 				className='homeHeader__background--second'
 				src={bg_pattern_home_2}
-				alt='bg-pattern-home-2.svg'
-				fetchPriority='high'
 			/>
 		</header>
 	);
