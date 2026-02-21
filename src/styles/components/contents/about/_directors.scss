@@ -1,0 +1,41 @@
+@use '/src/styles/utils/' as util;
+
+.directors {
+	background-color: var(--color-Teal-850);
+	overflow: hidden;
+	position: relative;
+
+	&__div {
+		max-width: 80%;
+		margin-inline: auto;
+		margin: util.rem(150) auto;
+		padding: 0 util.rem(40);
+	}
+
+	&__h1 {
+		text-align: center;
+		color: var(--color-Neutral-0);
+		margin-bottom: util.rem(20);
+		@include util.text-preset-3;
+	}
+
+	&__ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-rows: util.rem(300);
+		list-style-type: none;
+		gap: util.rem(30);
+	}
+
+	&__background--first {
+		position: absolute;
+		top: 0;
+		left: util.rem(-100);
+	}
+
+	&__background--second {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
