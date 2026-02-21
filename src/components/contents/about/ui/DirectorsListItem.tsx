@@ -14,13 +14,14 @@ function DirectorsListItem({
 	directorPosition: string;
 }) {
 	const [isToggled, setIsToggled] = useState<boolean>(false);
+	const isButtonToggled: string = isToggled ? 'directorsListItem__btn--active' : '';
 
 	const handleToggle = () => {
 		setIsToggled((currentState) => !currentState);
 	};
 
 	return (
-		<li className='directorsListItem__li'>
+		<li className='directorsListItem'>
 			{!isToggled && (
 				<>
 					<img
@@ -69,7 +70,7 @@ function DirectorsListItem({
 			)}
 
 			<button
-				className='directorsListItem__btn--toggle'
+				className={`directorsListItem__btn--toggle ${isButtonToggled}`}
 				type='button'
 				title='button'
 				onClick={handleToggle}
