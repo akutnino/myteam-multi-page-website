@@ -1,0 +1,85 @@
+@use '/src/styles/utils/' as util;
+
+.directorsListItem {
+	background-color: var(--color-Teal-900);
+	margin-top: util.rem(50);
+
+	&__img--directorImage {
+		width: util.rem(100);
+		height: util.rem(100);
+		border-radius: util.rem(50);
+		margin-top: util.rem(35);
+		justify-self: center;
+	}
+
+	&__h3--directorName {
+		margin-top: util.rem(20);
+		color: var(--color-Cyan-100);
+		justify-self: center;
+		@include util.text-preset-6;
+	}
+
+	&__p--directorPosition {
+		color: var(--color-Neutral-0);
+		justify-self: center;
+		@include util.text-preset-7-medium-italic;
+		font-style: italic;
+	}
+
+	&__p--statement {
+		margin: util.rem(20) util.rem(50);
+		text-align: center;
+		color: var(--color-Neutral-0);
+		@include util.text-preset-7-semibold;
+	}
+
+	&__ul--iconList {
+		display: flex;
+		list-style-type: none;
+		justify-self: center;
+		gap: util.rem(20);
+		margin-bottom: util.rem(16.5);
+	}
+
+	&__li--icon {
+		opacity: 1;
+	}
+
+	&__img--icon {
+		&:hover {
+			filter: invert(54%) sepia(58%) saturate(604%) hue-rotate(312deg) brightness(114%)
+				contrast(122%);
+		}
+	}
+
+	&__btn--toggle {
+		cursor: pointer;
+		position: relative;
+		top: util.rem(10);
+
+		display: block;
+		justify-self: center;
+		width: util.rem(60);
+		height: util.rem(60);
+		border: none;
+		border-radius: util.rem(50);
+		background-color: var(--color-Rose-500);
+
+		&:hover {
+			background-color: var(--color-Cyan-100);
+		}
+	}
+
+	&__btn--active {
+		background-color: var(--color-Rose-500);
+		transform: rotateZ(45deg);
+
+		&:hover {
+			background-color: var(--color-Rose-500);
+		}
+	}
+
+	&__img--toggle {
+		margin: auto;
+	}
+}
