@@ -1,0 +1,24 @@
+@use '/src/styles/utils/' as util;
+
+.loadingSpinner {
+	background-color: var(--color-Teal-800);
+	display: grid;
+	height: 100vh;
+
+	&__div {
+		justify-self: center;
+		align-self: center;
+		width: util.rem(100);
+		aspect-ratio: 1;
+		border-radius: 50%;
+		border: util.rem(10) solid;
+		border-color: var(--color-Neutral-0) #0000;
+		animation: l1 1s infinite;
+	}
+
+	@keyframes l1 {
+		to {
+			transform: rotate(0.5turn);
+		}
+	}
+}
