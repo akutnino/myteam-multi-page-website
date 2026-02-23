@@ -3,6 +3,20 @@
 .directorsListItem {
 	background-color: var(--color-Teal-900);
 	margin-top: util.rem(50);
+	position: relative;
+
+	&__div {
+		overflow-y: scroll;
+		max-height: util.rem(250);
+
+		&--active {
+			padding-bottom: util.rem(50);
+		}
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
 
 	&__img--directorImage {
 		width: util.rem(100);
@@ -38,7 +52,6 @@
 		list-style-type: none;
 		justify-self: center;
 		gap: util.rem(20);
-		margin-bottom: util.rem(16.5);
 	}
 
 	&__li--icon {
@@ -72,7 +85,8 @@
 
 	&__btn--active {
 		background-color: var(--color-Rose-500);
-		transform: rotateZ(45deg);
+		position: absolute;
+		top: util.rem(218.5);
 
 		&:hover {
 			background-color: var(--color-Rose-500);
@@ -81,5 +95,9 @@
 
 	&__img--toggle {
 		margin: auto;
+	}
+
+	&__img--active {
+		transform: rotateZ(45deg);
 	}
 }
