@@ -1,0 +1,58 @@
+@use '/src/styles/utils/' as util;
+
+.clients {
+	background-color: var(--color-Teal-900);
+	overflow: hidden;
+	position: relative;
+
+	&__div {
+		width: 80%;
+		margin-inline: auto;
+		margin: util.rem(150) auto;
+		padding: 0 util.rem(40);
+	}
+
+	&__h1 {
+		color: var(--color-Neutral-0);
+		text-align: center;
+		margin-bottom: util.rem(80);
+		@include util.text-preset-3;
+	}
+
+	&__div--logos {
+		display: flex;
+		justify-content: center;
+		gap: util.rem(80);
+	}
+
+	&__logo:first-child {
+		width: util.rem(165);
+		height: util.rem(28);
+	}
+
+	&__logo:nth-child(2) {
+		width: util.rem(184);
+		height: util.rem(23);
+	}
+
+	&__logo:nth-child(3) {
+		width: util.rem(180);
+		height: util.rem(28);
+	}
+
+	&__logo:nth-child(4) {
+		width: util.rem(165);
+		height: util.rem(28);
+	}
+
+	&__logo:last-child {
+		width: util.rem(98);
+		height: util.rem(45);
+	}
+
+	&__background--first {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
