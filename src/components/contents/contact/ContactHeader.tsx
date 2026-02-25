@@ -58,7 +58,7 @@ function ContactHeader() {
 			/>
 
 			<BackgroundImage
-				className='contactHeader__img--second'
+				className='contactHeader__img-second'
 				src={bg_pattern_contact_2}
 			/>
 		</header>
