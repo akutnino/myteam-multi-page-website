@@ -7,6 +7,8 @@ import FormInput from './ui/FormInput.tsx';
 import icon_person from '/src/assets/icon-person.svg';
 import icon_cog from '/src/assets/icon-cog.svg';
 import icon_chart from '/src/assets/icon-chart.svg';
+import bg_pattern_about_2_contact_1 from '/src/assets/bg-pattern-about-2-contact-1.svg';
+import bg_pattern_contact_2 from '/src/assets/bg-pattern-contact-2.svg';
 
 function ContactHeader() {
 	const [name, setName] = useState<string>('');
@@ -136,6 +138,16 @@ function ContactHeader() {
 					</form>
 				</section>
 			</div>
+
+			<BackgroundImage
+				className='contactHeader__img-first'
+				src={bg_pattern_about_2_contact_1}
+			/>
+
+			<BackgroundImage
+				className='contactHeader__img--second'
+				src={bg_pattern_contact_2}
+			/>
 		</header>
 	);
 }
