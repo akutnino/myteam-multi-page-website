@@ -7,11 +7,11 @@ function ContactButton({
 	hoverStyles,
 }: {
 	className: string;
+	children: ReactNode;
 	hoverStyles: {
 		backgroundColor: '--color-Neutral-0' | '--color-Teal-900';
 		color: '--color-Neutral-0' | '--color-Teal-950';
 	};
-	children: ReactNode;
 }) {
 	const [isHover, setIsHover] = useState<boolean>(false);
 
@@ -20,7 +20,7 @@ function ContactButton({
 	};
 
 	const handleOnMouseLeave = () => {
-		setIsHover((currentState) => !currentState);
+		setIsHover(false);
 	};
 
 	const styles: CSSProperties = {
