@@ -1,4 +1,74 @@
+@use '/src/styles/utils/' as util;
+
 .contactHeader {
 	background-color: var(--color-Teal-800);
 	overflow: hidden;
+	position: relative;
+
+	&__div {
+		display: flex;
+		justify-content: space-between;
+		max-width: 80%;
+		margin-inline: auto;
+		margin-top: util.rem(140);
+		margin-bottom: util.rem(100);
+		padding: 0 util.rem(40);
+	}
+
+	&__section {
+		display: grid;
+		gap: util.rem(40);
+
+		&:nth-of-type(1) {
+			height: fit-content;
+		}
+	}
+
+	&__div--box {
+		display: grid;
+		gap: util.rem(35);
+	}
+
+	&__h1 {
+		color: var(--color-Neutral-0);
+		@include util.text-preset-2;
+	}
+
+	&__h3 {
+		color: var(--color-Rose-500);
+		@include util.text-preset-5;
+	}
+
+	&__ul {
+		list-style-type: none;
+		width: util.rem(450);
+	}
+
+	&__li {
+		display: flex;
+	}
+
+	&__img {
+		width: util.rem(75);
+		height: util.rem(75);
+	}
+
+	&__p {
+		margin-left: util.rem(25);
+		color: var(--color-Neutral-0);
+		height: fit-content;
+		align-self: center;
+	}
+
+	&__img-first {
+		position: absolute;
+		top: util.rem(260);
+		left: util.rem(-100);
+	}
+
+	&__img-second {
+		position: absolute;
+		bottom: util.rem(0);
+		right: util.rem(-100);
+	}
 }
