@@ -1,3 +1,25 @@
+@use '/src/styles/utils/' as util;
+
 .formInput {
-	opacity: 1;
+	color: var(--color-Neutral-0);
+	border-style: none;
+	border-bottom: util.rem(1) solid var(--color-Neutral-0);
+	min-height: util.rem(45);
+	width: util.rem(500);
+	background: none;
+	padding-left: util.rem(20);
+
+	&::placeholder {
+		color: var(--color-Neutral-0);
+		opacity: 0.5;
+		@include util.text-preset-7-semibold;
+	}
+
+	&:nth-of-type(5) {
+		min-height: util.rem(85);
+	}
+
+	&:focus {
+		outline: none;
+	}
 }
