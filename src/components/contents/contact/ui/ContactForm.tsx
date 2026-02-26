@@ -1,8 +1,9 @@
-import { useState, type ChangeEvent, type SubmitEvent } from 'react';
+import { useState, type ChangeEvent, type CSSProperties, type SubmitEvent } from 'react';
 
 import FormInput from './FormInput.tsx';
 
 function ContactForm() {
+	const [isHover, setIsHover] = useState<boolean>(false);
 	const [name, setName] = useState<string>('');
 	const [email, setEmail] = useState<string>('');
 	const [company, setCompany] = useState<string>('');
@@ -47,6 +48,19 @@ function ContactForm() {
 		setMessage('');
 	};
 
+	const handleOnMouseEnter = () => {
+		setIsHover((currentState) => !currentState);
+	};
+
+	const handleOnMouseLeave = () => {
+		setIsHover((currentState) => !currentState);
+	};
+
+	const styles: CSSProperties = {
+		backgroundColor: `var(--color-Neutral-0)`,
+		color: `var(--color-Neutral-950)`,
+	};
+
 	return (
 		<form
 			className='contactForm'
@@ -87,6 +101,9 @@ function ContactForm() {
 			<button
 				className='contactForm__button'
 				type='submit'
+				style={isHover ? styles : undefined}
+				onMouseEnter={handleOnMouseEnter}
+				onMouseLeave={handleOnMouseLeave}
 			>
 				submit
 			</button>
