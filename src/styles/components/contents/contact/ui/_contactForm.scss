@@ -1,7 +1,18 @@
+@use '/src/styles/utils/' as util;
+
 .contactForm {
-	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	gap: util.rem(25);
 
 	&__button {
-		opacity: 1;
+		cursor: pointer;
+		color: var(--color-Neutral-0);
+		width: fit-content;
+		background: none;
+		border: util.rem(2) solid var(--color-Neutral-0);
+		border-radius: util.rem(50);
+		padding: util.rem(8) util.rem(32);
+		@include util.text-preset-6;
 	}
 }
