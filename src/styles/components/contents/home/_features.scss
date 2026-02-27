@@ -30,7 +30,8 @@
 
 	&__h1 {
 		color: var(--color-Neutral-0);
-		max-width: util.rem(445);
+		width: util.rem(445);
+		margin-right: util.rem(30);
 		@include util.text-preset-3;
 	}
 
@@ -72,5 +73,23 @@
 		position: absolute;
 		right: util.rem(-100);
 		bottom: util.rem(0);
+	}
+}
+
+@media (max-width: util.rem(1270)) {
+	.features {
+		&__div--main {
+			flex-direction: column;
+			gap: util.rem(65);
+		}
+
+		&__h1 {
+			width: 80%;
+			margin-right: util.rem(0);
+		}
+
+		&__background--first {
+			top: util.rem(0);
+		}
 	}
 }

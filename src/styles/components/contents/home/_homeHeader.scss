@@ -28,7 +28,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		max-width: util.rem(450);
+		width: util.rem(450);
 	}
 
 	&__rectangle {
@@ -53,5 +53,44 @@
 		justify-self: end;
 		margin-right: 10%;
 		padding: 0 util.rem(40);
+	}
+}
+
+@media (max-width: util.rem(1370)) {
+	.homeHeader {
+		&__section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: util.rem(30);
+		}
+
+		&__header {
+			text-align: center;
+		}
+
+		&__div {
+			width: 100%;
+		}
+
+		&__rectangle {
+			display: none;
+		}
+
+		&__paragraph {
+			align-self: center;
+			text-align: center;
+			width: 65ch;
+		}
+
+		&__background--first {
+			display: none;
+		}
+
+		&__background--second {
+			justify-self: center;
+			margin-right: 0;
+			margin-top: util.rem(120);
+		}
 	}
 }

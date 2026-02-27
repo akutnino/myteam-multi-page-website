@@ -27,8 +27,8 @@
 	}
 
 	&__list {
-		list-style-type: none;
 		display: flex;
+		list-style-type: none;
 		gap: util.rem(30);
 	}
 
@@ -90,5 +90,13 @@
 		position: absolute;
 		bottom: util.rem(0);
 		right: util.rem(0);
+	}
+}
+
+@media (max-width: util.rem(1360)) {
+	.testimonials {
+		&__list {
+			flex-direction: column;
+		}
 	}
 }
