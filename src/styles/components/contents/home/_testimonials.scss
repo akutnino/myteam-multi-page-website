@@ -95,6 +95,10 @@
 
 @media (max-width: util.rem(1360)) {
 	.testimonials {
+		&__h1 {
+			@include util.text-preset-5;
+		}
+
 		&__list {
 			flex-direction: column;
 		}

@@ -76,7 +76,7 @@
 	}
 }
 
-@media (max-width: util.rem(1270)) {
+@media (max-width: util.rem(1300)) {
 	.features {
 		&__div--main {
 			flex-direction: column;
@@ -86,10 +86,32 @@
 		&__h1 {
 			width: 80%;
 			margin-right: util.rem(0);
+			@include util.text-preset-5;
 		}
 
 		&__background--first {
 			top: util.rem(0);
+		}
+	}
+}
+
+@media (max-width: util.rem(650)) {
+	.features {
+		&__div--outer {
+			max-width: 100%;
+		}
+
+		&__item {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__div--item {
+			align-items: center;
+		}
+
+		&__paragraph {
+			text-align: center;
 		}
 	}
 }

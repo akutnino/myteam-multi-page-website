@@ -15,8 +15,9 @@
 	}
 
 	&__header {
+		border: 1px solid red;
 		color: var(--color-Neutral-0);
-		max-width: util.rem(600);
+		width: util.rem(600);
 		@include util.text-preset-1;
 	}
 
@@ -67,6 +68,7 @@
 
 		&__header {
 			text-align: center;
+			@include util.text-preset-2;
 		}
 
 		&__div {
@@ -81,6 +83,7 @@
 			align-self: center;
 			text-align: center;
 			width: 65ch;
+			@include util.text-preset-7-semibold;
 		}
 
 		&__background--first {
@@ -91,6 +94,23 @@
 			justify-self: center;
 			margin-right: 0;
 			margin-top: util.rem(120);
+		}
+	}
+}
+
+@media (max-width: util.rem(650)) {
+	.homeHeader {
+		&__section {
+			padding: 0 util.rem(0);
+		}
+
+		&__header {
+			max-width: 100%;
+			@include util.text-preset-4;
+		}
+
+		&__paragraph {
+			max-width: 100%;
 		}
 	}
 }
