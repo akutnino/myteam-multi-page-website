@@ -15,7 +15,6 @@
 	}
 
 	&__header {
-		border: 1px solid red;
 		color: var(--color-Neutral-0);
 		width: util.rem(600);
 		@include util.text-preset-1;
