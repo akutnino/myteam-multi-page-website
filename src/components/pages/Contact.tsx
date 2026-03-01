@@ -1,4 +1,4 @@
-import ContactHeader from '../contents/contact/ContactHeader.tsx';
+import ContactHeader from '../ui/contact/ContactHeader.tsx';
 
 function Contact() {
 	return (

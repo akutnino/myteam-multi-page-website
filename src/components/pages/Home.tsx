@@ -1,6 +1,6 @@
-import Features from '../contents/home/Features.tsx';
-import HomeHeader from '../contents/home/HomeHeader.tsx';
-import Testimonials from '../contents/home/Testimonials.tsx';
+import Features from '../ui/home/Features.tsx';
+import HomeHeader from '../ui/home/HomeHeader.tsx';
+import Testimonials from '../ui/home/Testimonials.tsx';
 
 function Home() {
 	return (
