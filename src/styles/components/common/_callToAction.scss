@@ -5,19 +5,19 @@
 	overflow: hidden;
 	position: relative;
 
-	&__div {
+	&__wrapper {
 		display: flex;
 		margin: util.rem(80) auto;
 		max-width: util.rem(910);
 		justify-content: space-between;
 	}
 
-	&__h1 {
+	&__heading {
 		color: var(--color-Teal-900);
 		@include util.text-preset-3;
 	}
 
-	&__contact {
+	&__contactButton {
 		color: var(--color-Teal-900);
 		border: util.rem(2) solid var(--color-Teal-900);
 		border-radius: util.rem(50);
@@ -25,7 +25,7 @@
 		@include util.text-preset-6;
 	}
 
-	&__logo {
+	&__backgroundImage {
 		position: absolute;
 		bottom: util.rem(0);
 	}
@@ -33,7 +33,7 @@
 
 @media (max-width: util.rem(1250)) {
 	.callToAction {
-		&__div {
+		&__wrapper {
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
