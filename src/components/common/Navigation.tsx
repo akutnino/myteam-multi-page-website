@@ -7,27 +7,27 @@ import logo from '/src/assets/logo.svg';
 function Navigation() {
 	return (
 		<nav className='navigation'>
-			<div className='navigation__div'>
+			<div className='navigation__wrapper'>
 				<img
-					className='navigation__logo'
+					className='navigation__logoImage'
 					src={logo}
 					alt='myteam logo.svg'
 					fetchPriority='high'
 				/>
 
-				<ul className='navigation__list'>
-					<li className='navigation__item'>
+				<ul className='navigation__navlist'>
+					<li className='navigation__navItem'>
 						<Link
-							className='navigation__link'
+							className='navigation__navLink'
 							to={'/'}
 						>
 							home
 						</Link>
 					</li>
 
-					<li className='navigation__item'>
+					<li className='navigation__navItem'>
 						<Link
-							className='navigation__link'
+							className='navigation__navLink'
 							to={'/about'}
 						>
 							about
@@ -37,7 +37,7 @@ function Navigation() {
 			</div>
 
 			<ContactButton
-				className='navigation__contact'
+				className='navigation__contactButton'
 				hoverStyles={{
 					backgroundColor: '--color-Neutral-0',
 					color: '--color-Teal-950',
