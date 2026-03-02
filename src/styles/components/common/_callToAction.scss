@@ -36,9 +36,22 @@
 		&__wrapper {
 			flex-direction: column;
 			align-items: center;
+			justify-self: center;
 			text-align: center;
 			gap: util.rem(20);
 			margin: util.rem(80) util.rem(100);
+		}
+
+		&__heading {
+			@include util.text-preset-5;
+		}
+	}
+}
+
+@media (max-width: util.rem(650)) {
+	.callToAction {
+		&__wrapper {
+			margin-bottom: util.rem(120);
 		}
 	}
 }
