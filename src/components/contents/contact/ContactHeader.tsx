@@ -1,6 +1,6 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 import Navigation from '../../common/Navigation.tsx';
-import ContactForm from './contents/ContactForm.tsx';
+import ContactForm from './elements/ContactForm.tsx';
 
 import icon_person from '/src/assets/icon-person.svg';
 import icon_cog from '/src/assets/icon-cog.svg';

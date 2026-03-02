@@ -1,4 +1,4 @@
-import DirectorsListItem from './contents/DirectorsListItem.tsx';
+import DirectorsListItem from './elements/DirectorsListItem.tsx';
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 
 import avatar_nikita from '/src/assets/avatar-nikita.jpg';
