@@ -1,3 +1,4 @@
+import BackgroundImage from './BackgroundImage.tsx';
 import ContactButton from './ContactButton.tsx';
 
 import bg_pattern_home_6_about_5 from '/src/assets/bg-pattern-home-6-about-5.svg';
@@ -19,11 +20,9 @@ function CallToAction() {
 				</ContactButton>
 			</div>
 
-			<img
+			<BackgroundImage
 				className='callToAction__backgroundImage'
 				src={bg_pattern_home_6_about_5}
-				alt='bg-pattern-home-6-about-5.svg'
-				fetchPriority='high'
 			/>
 		</section>
 	);
