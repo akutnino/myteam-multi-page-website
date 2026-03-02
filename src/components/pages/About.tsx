@@ -1,6 +1,6 @@
-import AboutHeader from '../ui/about/AboutHeader.tsx';
-import Clients from '../ui/about/Clients.tsx';
-import Directors from '../ui/about/Directors.tsx';
+import AboutHeader from '../contents/about/AboutHeader.tsx';
+import Clients from '../contents/about/Clients.tsx';
+import Directors from '../contents/about/Directors.tsx';
 
 function About() {
 	return (
