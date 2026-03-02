@@ -8,28 +8,28 @@ import twitter_icon from '/src/assets/icon-twitter.svg';
 function Footer() {
 	return (
 		<footer className='footer'>
-			<div className='footer__div'>
-				<nav className='footer__nav--links'>
+			<div className='footer__wrapper'>
+				<nav className='footer__navLinks'>
 					<img
-						className='footer__logo'
+						className='footer__logoImage'
 						src={logo}
 						alt='myteam logo.svg'
 						fetchPriority='high'
 					/>
 
-					<ul className='footer__list'>
-						<li className='footer__item'>
+					<ul className='footer__navList'>
+						<li className='footer__navItem'>
 							<Link
-								className='footer__link'
+								className='footer__navLink'
 								to={'/'}
 							>
 								home
 							</Link>
 						</li>
 
-						<li className='footer__item'>
+						<li className='footer__navItem'>
 							<Link
-								className='footer__link'
+								className='footer__navLink'
 								to={'/about'}
 							>
 								about
@@ -38,8 +38,8 @@ function Footer() {
 					</ul>
 				</nav>
 
-				<div className='footer__div--address'>
-					<p className='footer__paragraph--address'>
+				<div className='footer__address'>
+					<p className='footer__addressContent'>
 						987 Hillcrest Lane <br />
 						Irvine, CA <br />
 						California 92714 <br />
@@ -47,15 +47,15 @@ function Footer() {
 					</p>
 				</div>
 
-				<ul className='footer__list--media'>
-					<li className='footer__item--icon'>
+				<ul className='footer__mediaList'>
+					<li className='footer__mediaItem'>
 						<Link
-							className='footer__link--icon'
+							className='footer__iconLink'
 							target='_blank'
 							to={'https://www.facebook.com/'}
 						>
 							<img
-								className='footer__icon'
+								className='footer__iconImage'
 								src={facebook_icon}
 								alt='icon-facebook.svg'
 								fetchPriority='high'
@@ -63,14 +63,14 @@ function Footer() {
 						</Link>
 					</li>
 
-					<li className='footer__item--icon'>
+					<li className='footer__mediaItem'>
 						<Link
-							className='footer__link--icon'
+							className='footer__iconLink'
 							target='_blank'
 							to={'https://www.pinterest.com/'}
 						>
 							<img
-								className='footer__icon'
+								className='footer__iconImage'
 								src={pinterest_icon}
 								alt='myteam logo.svg'
 								fetchPriority='high'
@@ -78,14 +78,14 @@ function Footer() {
 						</Link>
 					</li>
 
-					<li className='footer__item--icon'>
+					<li className='footer__mediaItem'>
 						<Link
-							className='footer__link--icon'
+							className='footer__iconLink'
 							target='_blank'
 							to={'https://x.com/'}
 						>
 							<img
-								className='footer__icon'
+								className='footer__iconImage'
 								src={twitter_icon}
 								alt='icon-twitter.svg'
 								fetchPriority='high'
@@ -94,9 +94,7 @@ function Footer() {
 					</li>
 				</ul>
 
-				<p className='footer__paragraph--copyright'>
-					Copyright 2020. All Rights Reserved
-				</p>
+				<p className='footer__copyrightContent'>Copyright 2020. All Rights Reserved</p>
 			</div>
 		</footer>
 	);
