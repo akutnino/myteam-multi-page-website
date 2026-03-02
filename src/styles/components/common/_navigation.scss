@@ -10,28 +10,28 @@
 	padding: 0 util.rem(40);
 	height: util.rem(44);
 
-	&__div {
+	&__wrapper {
 		display: flex;
 		align-items: center;
 		gap: util.rem(80);
 	}
 
-	&__logo {
+	&__logoImage {
 		height: max-content;
 	}
 
-	&__list {
+	&__navlist {
 		display: flex;
 		list-style-type: none;
 		gap: util.rem(40);
 		height: util.rem(28);
 	}
 
-	&__item {
+	&__navItem {
 		height: util.rem(28);
 	}
 
-	&__link {
+	&__navLink {
 		color: var(--color-Neutral-0);
 		@include util.text-preset-6;
 
@@ -40,7 +40,7 @@
 		}
 	}
 
-	&__contact {
+	&__contactButton {
 		color: var(--color-Neutral-0);
 		border: util.rem(2) solid var(--color-Neutral-0);
 		border-radius: util.rem(50);
