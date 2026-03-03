@@ -8,26 +8,24 @@ import bg_pattern_home_3 from '/src/assets/bg-pattern-home-3.svg';
 function Features() {
 	return (
 		<section className='features'>
-			<div className='features__div--outer'>
+			<div className='features__wrapper'>
 				<div className='features__rectangle' />
 
-				<div className='features__div--main'>
-					<h1 className='features__h1'>
+				<div className='features__listWrapper'>
+					<h1 className='features__header'>
 						Build & manage distributed teams like no one else.
 					</h1>
 
 					<ul className='features__list'>
 						<li className='features__item'>
-							<img
-								className='features__img'
+							<BackgroundImage
+								className='features__iconImage'
 								src={icon_person}
-								alt='icon-person.svg'
-								fetchPriority='high'
 							/>
 
-							<div className='features__div--item'>
-								<h2 className='features__h2'>Experienced Individuals</h2>
-								<p className='features__paragraph'>
+							<div className='features__descriptionWrapper'>
+								<h2 className='features__featureHeader'>Experienced Individuals</h2>
+								<p className='features__description'>
 									Our network is made up of highly experienced professionals who are
 									passionate about what they do.
 								</p>
@@ -35,16 +33,14 @@ function Features() {
 						</li>
 
 						<li className='features__item'>
-							<img
-								className='features__img'
+							<BackgroundImage
+								className='features__iconImage'
 								src={icon_cog}
-								alt='icon-cog.svg'
-								fetchPriority='high'
 							/>
 
-							<div className='features__div--item'>
-								<h2 className='features__h2'>Easy to Implement</h2>
-								<p className='features__paragraph'>
+							<div className='features__descriptionWrapper'>
+								<h2 className='features__featureHeader'>Easy to Implement</h2>
+								<p className='features__description'>
 									Our processes have been refined over years of implementation meaning our
 									teams always deliver.
 								</p>
@@ -52,16 +48,14 @@ function Features() {
 						</li>
 
 						<li className='features__item'>
-							<img
-								className='features__img'
+							<BackgroundImage
+								className='features__iconImage'
 								src={icon_chart}
-								alt='icon-chart.svg'
-								fetchPriority='high'
 							/>
 
-							<div className='features__div--item'>
-								<h2 className='features__h2'>Enhanced Productivity</h2>
-								<p className='features__paragraph'>
+							<div className='features__descriptionWrapper'>
+								<h2 className='features__featureHeader'>Enhanced Productivity</h2>
+								<p className='features__description'>
 									Our customized platform with in-built analytics helps you manage your
 									distributed teams.
 								</p>
@@ -72,7 +66,7 @@ function Features() {
 			</div>
 
 			<BackgroundImage
-				className='features__background--first'
+				className='features__backgroundImage'
 				src={bg_pattern_home_3}
 			/>
 		</section>
