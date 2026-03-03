@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import BackgroundImage from '../../../common/BackgroundImage.tsx';
+
 import twitter_icon from '/src/assets/icon-twitter.svg';
 import linkedin_icon from '/src/assets/icon-linkedin.svg';
 import toggle_icon from '/src/assets/icon-cross.svg';
@@ -14,8 +16,7 @@ function DirectorsListItem({
 	directorPosition: string;
 }) {
 	const [isToggled, setIsToggled] = useState<boolean>(false);
-	const isButtonToggled: string = isToggled ? 'directorsListItem__btn--active' : '';
-	const isButtonActive: string = isButtonToggled ? 'directorsListItem__div--active' : '';
+	const isButtonToggled: string = isToggled ? 'directorsListItem__activeButton' : '';
 
 	const handleToggle = () => {
 		setIsToggled((currentState) => !currentState);
@@ -23,48 +24,39 @@ function DirectorsListItem({
 
 	return (
 		<li className='directorsListItem'>
-			<div className={`directorsListItem__div ${isButtonActive}`}>
+			<div className={`directorsListItem__wrapper`}>
 				{!isToggled && (
 					<>
-						<img
-							className='directorsListItem__img--directorImage'
+						<BackgroundImage
+							className='directorsListItem__directorImage'
 							src={directorImageSrc}
-							alt='director_image'
-							role='presentation'
-							fetchPriority='high'
 						/>
 
-						<h3 className='directorsListItem__h3--directorName'>{directorName}</h3>
-						<p className='directorsListItem__p--directorPosition'>{directorPosition}</p>
+						<h3 className='directorsListItem__directorName'>{directorName}</h3>
+						<p className='directorsListItem__directorPosition'>{directorPosition}</p>
 					</>
 				)}
 
 				{isToggled && (
 					<>
-						<h3 className='directorsListItem__h3--directorName'>{directorName}</h3>
-						<p className='directorsListItem__p--statement'>
+						<h3 className='directorsListItem__directorName'>{directorName}</h3>
+						<p className='directorsListItem__directorStatement'>
 							“Empowered teams create truly amazing products. Set the north star and let
 							them follow it.”
 						</p>
 
-						<ul className='directorsListItem__ul--iconList'>
-							<li className='directorsListItem__li--icon'>
-								<img
-									className='directorsListItem__img--icon'
+						<ul className='directorsListItem__list'>
+							<li className='directorsListItem__item'>
+								<BackgroundImage
+									className='directorsListItem__iconImage'
 									src={twitter_icon}
-									alt='twitter_icon'
-									role='presentation'
-									fetchPriority='high'
 								/>
 							</li>
 
-							<li className='directorsListItem__li--icon'>
-								<img
-									className='directorsListItem__img--icon'
+							<li className='directorsListItem__item'>
+								<BackgroundImage
+									className='directorsListItem__iconImage'
 									src={linkedin_icon}
-									alt='linkedin_icon'
-									role='presentation'
-									fetchPriority='high'
 								/>
 							</li>
 						</ul>
@@ -73,13 +65,13 @@ function DirectorsListItem({
 			</div>
 
 			<button
-				className={`directorsListItem__btn--toggle ${isButtonToggled}`}
+				className={`directorsListItem__toggleButton ${isButtonToggled} `}
 				type='button'
 				title='button'
 				onClick={handleToggle}
 			>
 				<img
-					className='directorsListItem__img--toggle'
+					className='directorsListItem__buttonImage'
 					src={toggle_icon}
 					alt='toggle_icon'
 					role='presentation'
