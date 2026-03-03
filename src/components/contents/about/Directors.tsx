@@ -13,10 +13,10 @@ import bg_pattern_about_2_contact_1 from '/src/assets/bg-pattern-about-2-contact
 function Directors() {
 	return (
 		<section className='directors'>
-			<div className='directors__div'>
-				<h1 className='directors__h1'>Meet the directors</h1>
+			<div className='directors__wrapper'>
+				<h1 className='directors__header'>Meet the directors</h1>
 
-				<ul className='directors__ul'>
+				<ul className='directors__list'>
 					<DirectorsListItem
 						directorImageSrc={avatar_nikita}
 						directorName='Nikita Marks'
@@ -51,12 +51,12 @@ function Directors() {
 			</div>
 
 			<BackgroundImage
-				className='directors__background--first'
+				className='directors__backgroundImage--first'
 				src={bg_pattern_about_2_contact_1}
 			/>
 
 			<BackgroundImage
-				className='directors__background--second'
+				className='directors__backgroundImage--second'
 				src={bg_pattern_home_4_about_3}
 			/>
 		</section>
