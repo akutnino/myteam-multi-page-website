@@ -24,7 +24,7 @@
 		color: var(--color-Rose-500);
 	}
 
-	&__div {
+	&__descriptionWrapper {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -37,18 +37,18 @@
 		background-color: var(--color-Cyan-100);
 	}
 
-	&__paragraph {
+	&__description {
 		color: var(--color-Neutral-0);
 		@include util.text-preset-6;
 	}
 
-	&__background--first {
+	&__backgroundImage--first {
 		position: relative;
 		bottom: util.rem(200);
 		right: util.rem(100);
 	}
 
-	&__background--second {
+	&__backgroundImage--second {
 		display: flex;
 		justify-self: end;
 		margin-right: 10%;
@@ -70,7 +70,7 @@
 			@include util.text-preset-2;
 		}
 
-		&__div {
+		&__descriptionWrapper {
 			width: 100%;
 		}
 
@@ -78,18 +78,18 @@
 			display: none;
 		}
 
-		&__paragraph {
+		&__description {
 			align-self: center;
 			text-align: center;
 			width: 65ch;
 			@include util.text-preset-7-semibold;
 		}
 
-		&__background--first {
+		&__backgroundImage--first {
 			display: none;
 		}
 
-		&__background--second {
+		&__backgroundImage--second {
 			justify-self: center;
 			margin-right: 0;
 			margin-top: util.rem(120);
@@ -108,7 +108,7 @@
 			@include util.text-preset-4;
 		}
 
-		&__paragraph {
+		&__description {
 			max-width: 100%;
 		}
 	}
