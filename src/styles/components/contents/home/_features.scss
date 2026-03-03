@@ -5,7 +5,7 @@
 	overflow: hidden;
 	position: relative;
 
-	&__div--outer {
+	&__wrapper {
 		display: flex;
 		flex-direction: column;
 		max-width: 80%;
@@ -23,12 +23,12 @@
 		background-color: var(--color-Rose-500);
 	}
 
-	&__div--main {
+	&__listWrapper {
 		display: flex;
 		justify-content: space-between;
 	}
 
-	&__h1 {
+	&__header {
 		color: var(--color-Neutral-0);
 		width: util.rem(445);
 		margin-right: util.rem(30);
@@ -48,28 +48,28 @@
 		gap: util.rem(25);
 	}
 
-	&__img {
+	&__iconImage {
 		width: util.rem(75);
 		height: util.rem(75);
 	}
 
-	&__div--item {
+	&__descriptionWrapper {
 		display: flex;
 		flex-direction: column;
 		gap: util.rem(20);
 	}
 
-	&__h2 {
+	&__featureHeader {
 		color: var(--color-Rose-500);
 		@include util.text-preset-6;
 	}
 
-	&__paragraph {
+	&__description {
 		color: var(--color-Neutral-50);
 		@include util.text-preset-7-semibold;
 	}
 
-	&__background--first {
+	&__backgroundImage {
 		position: absolute;
 		right: util.rem(-100);
 		bottom: util.rem(0);
@@ -78,18 +78,18 @@
 
 @media (max-width: util.rem(1300)) {
 	.features {
-		&__div--main {
+		&__listWrapper {
 			flex-direction: column;
 			gap: util.rem(65);
 		}
 
-		&__h1 {
+		&__header {
 			width: 80%;
 			margin-right: util.rem(0);
 			@include util.text-preset-5;
 		}
 
-		&__background--first {
+		&__backgroundImage {
 			top: util.rem(0);
 		}
 	}
@@ -97,7 +97,7 @@
 
 @media (max-width: util.rem(650)) {
 	.features {
-		&__div--outer {
+		&__wrapper {
 			max-width: 100%;
 		}
 
@@ -106,11 +106,11 @@
 			align-items: center;
 		}
 
-		&__div--item {
+		&__descriptionWrapper {
 			align-items: center;
 		}
 
-		&__paragraph {
+		&__description {
 			text-align: center;
 		}
 	}
