@@ -10,35 +10,35 @@ import bg_pattern_home_3 from '/src/assets/bg-pattern-home-3.svg';
 function Clients() {
 	return (
 		<section className='clients'>
-			<div className='clients__div'>
-				<h1 className='clients__h1'>Some of our clients</h1>
+			<div className='clients__wrapper'>
+				<h1 className='clients__header'>Some of our clients</h1>
 
-				<div className='clients__div--logos'>
+				<div className='clients__logoWrapper'>
 					<BackgroundImage
-						className='clients__logo'
+						className='clients__logoImage'
 						src={logo_the_verge}
 					/>
 					<BackgroundImage
-						className='clients__logo'
+						className='clients__logoImage'
 						src={logo_jakarta_post}
 					/>
 					<BackgroundImage
-						className='clients__logo'
+						className='clients__logoImage'
 						src={logo_the_guardian}
 					/>
 					<BackgroundImage
-						className='clients__logo'
+						className='clients__logoImage'
 						src={logo_tech_radar}
 					/>
 					<BackgroundImage
-						className='clients__logo'
+						className='clients__logoImage'
 						src={logo_gadgets_now}
 					/>
 				</div>
 			</div>
 
 			<BackgroundImage
-				className='clients__background--first'
+				className='clients__backgroundImage'
 				src={bg_pattern_home_3}
 			/>
 		</section>
