@@ -10,95 +10,83 @@ import bg_pattern_home_4_about_3 from '/src/assets/bg-pattern-home-4-about-3.svg
 function Testimonials() {
 	return (
 		<section className='testimonials'>
-			<div className='testimonials__div--outer'>
-				<h1 className='testimonials__h1'>
+			<div className='testimonials__wrapper'>
+				<h1 className='testimonials__header'>
 					Delivering real results for top companies. Some of our
 					<span className='testimonials__span'> success stories.</span>
 				</h1>
 
 				<ul className='testimonials__list'>
 					<li className='testimonials__item'>
-						<div className='testimonials__div--feedback'>
-							<img
-								className='testimonials__img--quotes'
+						<div className='testimonials__feedbackWrapper'>
+							<BackgroundImage
+								className='testimonials__quotesImage'
 								src={icon_quotes}
-								alt='icon-quotes.svg'
-								fetchPriority='high'
 							/>
-							<p className='testimonials__paragraph'>
+							<p className='testimonials__feedbackStatement'>
 								“The team perfectly fit the specialized skill set required. They focused
 								on the most essential features helping us launch the platform eight months
 								faster than planned.”
 							</p>
 						</div>
-						<div className='testimonials__div--user'>
-							<div className='testimonials__div--details'>
-								<h3 className='testimonials__h3--username'>Kady Baker</h3>
-								<h3 className='testimonials__h3--userposition'>
+						<div className='testimonials__userWrapper'>
+							<div className='testimonials__detailsWrapper'>
+								<h3 className='testimonials__username'>Kady Baker</h3>
+								<h3 className='testimonials__userposition'>
 									Product Manager at Bookmark
 								</h3>
 							</div>
-							<img
-								className='testimonials__img--avatar'
+							<BackgroundImage
+								className='testimonials__avatarImage'
 								src={avatar_kady}
-								alt='avatar-kady.jpg'
-								fetchPriority='high'
 							/>
 						</div>
 					</li>
 
 					<li className='testimonials__item'>
-						<div className='testimonials__div--feedback'>
-							<img
-								className='testimonials__img--quotes'
+						<div className='testimonials__feedbackWrapper'>
+							<BackgroundImage
+								className='testimonials__quotesImage'
 								src={icon_quotes}
-								alt='icon-quotes.svg'
-								fetchPriority='high'
 							/>
-							<p className='testimonials__paragraph'>
+							<p className='testimonials__feedbackStatement'>
 								“We needed to automate our entire onboarding process. The team came in and
 								built out the whole journey. Since going live, user retention has gone
 								through the roof!”
 							</p>
 						</div>
-						<div className='testimonials__div--user'>
-							<div className='testimonials__div--details'>
-								<h3 className='testimonials__h3--username'>Aiysha Reese</h3>
-								<h3 className='testimonials__h3--userposition'>Founder of Manage</h3>
+						<div className='testimonials__userWrapper'>
+							<div className='testimonials__detailsWrapper'>
+								<h3 className='testimonials__username'>Aiysha Reese</h3>
+								<h3 className='testimonials__userposition'>Founder of Manage</h3>
 							</div>
-							<img
-								className='testimonials__img--avatar'
+							<BackgroundImage
+								className='testimonials__avatarImage'
 								src={avatar_aiysha}
-								alt='avatar-aiysha.jpg'
-								fetchPriority='high'
 							/>
 						</div>
 					</li>
 
 					<li className='testimonials__item'>
-						<div className='testimonials__div--feedback'>
-							<img
-								className='testimonials__img--quotes'
+						<div className='testimonials__feedbackWrapper'>
+							<BackgroundImage
+								className='testimonials__quotesImage'
 								src={icon_quotes}
-								alt='icon-quotes.svg'
-								fetchPriority='high'
 							/>
-							<p className='testimonials__paragraph'>
+							<p className='testimonials__feedbackStatement'>
 								“Amazing. Our team helped us build an app that delivered a new experience
 								for hiring a physio. The launch was an instant success with 100k downloads
 								in the first month.”
 							</p>
 						</div>
-						<div className='testimonials__div--user'>
-							<div className='testimonials__div--details'>
-								<h3 className='testimonials__h3--username'>Arthur Clarke</h3>
-								<h3 className='testimonials__h3--userposition'>Co-founder of MyPhysio</h3>
+						<div className='testimonials__userWrapper'>
+							<div className='testimonials__detailsWrapper'>
+								<h3 className='testimonials__username'>Arthur Clarke</h3>
+								<h3 className='testimonials__userposition'>Co-founder of MyPhysio</h3>
 							</div>
-							<img
-								className='testimonials__img--avatar'
+							<BackgroundImage
+								className='testimonials__avatarImage'
 								src={avatar_arthur}
-								alt='avatar-arthur.jpg'
-								fetchPriority='high'
 							/>
 						</div>
 					</li>
@@ -106,12 +94,12 @@ function Testimonials() {
 			</div>
 
 			<BackgroundImage
-				className='testimonials__background--first'
+				className='testimonials__backgroundImage--first'
 				src={bg_pattern_home_4_about_3}
 			/>
 
 			<BackgroundImage
-				className='testimonials__background--second'
+				className='testimonials__backgroundImage--second'
 				src={bg_pattern_home_5}
 			/>
 		</section>
