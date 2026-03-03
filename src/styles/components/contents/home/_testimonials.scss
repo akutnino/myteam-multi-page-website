@@ -5,7 +5,7 @@
 	overflow: hidden;
 	position: relative;
 
-	&__div--outer {
+	&__wrapper {
 		max-width: 80%;
 		margin-inline: auto;
 		margin-top: util.rem(146);
@@ -13,7 +13,7 @@
 		padding: 0 util.rem(40);
 	}
 
-	&__h1 {
+	&__header {
 		color: var(--color-Neutral-0);
 		justify-self: center;
 		text-align: center;
@@ -39,11 +39,15 @@
 		gap: util.rem(5);
 	}
 
-	&__img--quotes {
+	&__feedbackWrapper {
+		opacity: 1;
+	}
+
+	&__quotesImage {
 		justify-self: center;
 	}
 
-	&__paragraph {
+	&__feedbackStatement {
 		position: relative;
 		bottom: util.rem(20);
 		color: var(--color-Neutral-0);
@@ -51,28 +55,28 @@
 		@include util.text-preset-7-semibold;
 	}
 
-	&__div--user {
+	&__userWrapper {
 		display: flex;
 		flex-direction: column;
 		gap: util.rem(30);
 	}
 
-	&__div--details {
+	&__detailsWrapper {
 		justify-items: center;
 	}
 
-	&__h3--username {
+	&__username {
 		color: var(--color-Cyan-100);
 		@include util.text-preset-6;
 	}
 
-	&__h3--userposition {
+	&__userposition {
 		@include util.text-preset-8;
 		color: var(--color-Neutral-0);
 		font-style: italic;
 	}
 
-	&__img--avatar {
+	&__avatarImage {
 		align-self: center;
 		width: util.rem(70);
 		height: util.rem(70);
@@ -80,13 +84,13 @@
 		border: util.rem(2) solid var(--color-Cyan-100);
 	}
 
-	&__background--first {
+	&__backgroundImage--first {
 		position: absolute;
 		top: util.rem(0);
 		left: util.rem(0);
 	}
 
-	&__background--second {
+	&__backgroundImage--second {
 		position: absolute;
 		bottom: util.rem(0);
 		right: util.rem(0);
@@ -95,7 +99,7 @@
 
 @media (max-width: util.rem(1360)) {
 	.testimonials {
-		&__h1 {
+		&__header {
 			@include util.text-preset-5;
 		}
 
