@@ -11,9 +11,9 @@ function AboutHeader() {
 			<section className='aboutHeader__section'>
 				<h1 className='aboutHeader__header'>About</h1>
 
-				<div className='aboutHeader__div'>
+				<div className='aboutHeader__descriptionWrapper'>
 					<div className='aboutHeader__rectangle' />
-					<p className='aboutHeader__paragraph'>
+					<p className='aboutHeader__description'>
 						We help companies build dynamic teams made up of top global talent. Using our
 						network of passionate professionals we drive innovation and deliver incredible
 						outcomes. Talented, diverse teams shape the best products and experiences.
@@ -23,7 +23,7 @@ function AboutHeader() {
 			</section>
 
 			<BackgroundImage
-				className='aboutHeader__background--first'
+				className='aboutHeader__backgroundImage'
 				src={bg_pattern_about_1_mobile_nav_1}
 			/>
 		</header>
