@@ -22,7 +22,7 @@
 		@include util.text-preset-2;
 	}
 
-	&__div {
+	&__descriptionWrapper {
 		display: flex;
 		flex-direction: column;
 		gap: util.rem(50);
@@ -34,12 +34,12 @@
 		background-color: var(--color-Rose-500);
 	}
 
-	&__paragraph {
+	&__description {
 		color: var(--color-Neutral-0);
 		@include util.text-preset-6;
 	}
 
-	&__background--first {
+	&__backgroundImage {
 		position: absolute;
 		bottom: util.rem(0);
 		right: util.rem(-100);
