@@ -5,7 +5,7 @@
 	margin-top: util.rem(50);
 	position: relative;
 
-	&__div {
+	&__wrapper {
 		overflow-y: scroll;
 		max-height: util.rem(250);
 
@@ -18,7 +18,7 @@
 		}
 	}
 
-	&__img--directorImage {
+	&__directorImage {
 		width: util.rem(100);
 		height: util.rem(100);
 		border-radius: util.rem(50);
@@ -26,46 +26,46 @@
 		justify-self: center;
 	}
 
-	&__h3--directorName {
+	&__directorName {
 		margin-top: util.rem(20);
 		color: var(--color-Cyan-100);
 		justify-self: center;
 		@include util.text-preset-6;
 	}
 
-	&__p--directorPosition {
+	&__directorPosition {
 		color: var(--color-Neutral-0);
 		justify-self: center;
 		@include util.text-preset-7-medium-italic;
 		font-style: italic;
 	}
 
-	&__p--statement {
+	&__directorStatement {
 		margin: util.rem(20) util.rem(50);
 		text-align: center;
 		color: var(--color-Neutral-0);
 		@include util.text-preset-7-semibold;
 	}
 
-	&__ul--iconList {
+	&__list {
 		display: flex;
 		list-style-type: none;
 		justify-self: center;
 		gap: util.rem(20);
 	}
 
-	&__li--icon {
+	&__item {
 		opacity: 1;
 	}
 
-	&__img--icon {
+	&__iconImage {
 		&:hover {
 			filter: invert(54%) sepia(58%) saturate(604%) hue-rotate(312deg) brightness(114%)
 				contrast(122%);
 		}
 	}
 
-	&__btn--toggle {
+	&__toggleButton {
 		cursor: pointer;
 		position: relative;
 		top: util.rem(10);
@@ -83,21 +83,18 @@
 		}
 	}
 
-	&__btn--active {
+	&__activeButton {
 		background-color: var(--color-Rose-500);
 		position: absolute;
 		top: util.rem(218.5);
+		transform: rotateZ(45deg);
 
 		&:hover {
 			background-color: var(--color-Rose-500);
 		}
 	}
 
-	&__img--toggle {
+	&__buttonImage {
 		margin: auto;
-	}
-
-	&__img--active {
-		transform: rotateZ(45deg);
 	}
 }
