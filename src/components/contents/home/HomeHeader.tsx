@@ -14,10 +14,10 @@ function HomeHeader() {
 					Find the best <span className='homeHeader__span'>talent</span>
 				</h1>
 
-				<div className='homeHeader__div'>
+				<div className='homeHeader__descriptionWrapper'>
 					<div className='homeHeader__rectangle' />
 
-					<p className='homeHeader__paragraph'>
+					<p className='homeHeader__description'>
 						Finding the right people and building high performing teams can be hard. Most
 						companies aren’t tapping into the abundance of global talent. We’re about to
 						change that.
@@ -26,12 +26,12 @@ function HomeHeader() {
 			</section>
 
 			<BackgroundImage
-				className='homeHeader__background--first'
+				className='homeHeader__backgroundImage--first'
 				src={bg_pattern_home_1}
 			/>
 
 			<BackgroundImage
-				className='homeHeader__background--second'
+				className='homeHeader__backgroundImage--second'
 				src={bg_pattern_home_2}
 			/>
 		</header>
