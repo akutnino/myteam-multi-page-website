@@ -100,6 +100,7 @@
 @media (max-width: util.rem(650)) {
 	.homeHeader {
 		&__section {
+			max-width: 90%;
 			padding: 0 util.rem(0);
 		}
 
