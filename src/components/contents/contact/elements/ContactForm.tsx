@@ -99,7 +99,7 @@ function ContactForm() {
 			/>
 
 			<button
-				className='contactForm__button'
+				className='contactForm__submitButton'
 				type='submit'
 				style={isHover ? styles : undefined}
 				onMouseEnter={handleOnMouseEnter}
