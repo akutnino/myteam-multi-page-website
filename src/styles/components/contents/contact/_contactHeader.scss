@@ -5,7 +5,7 @@
 	overflow: hidden;
 	position: relative;
 
-	&__div {
+	&__wrapper {
 		display: flex;
 		justify-content: space-between;
 		max-width: 80%;
@@ -24,49 +24,49 @@
 		}
 	}
 
-	&__div--box {
+	&__headerWrapper {
 		display: grid;
 		gap: util.rem(35);
 	}
 
-	&__h1 {
+	&__header {
 		color: var(--color-Neutral-0);
 		@include util.text-preset-2;
 	}
 
-	&__h3 {
+	&__headerDescription {
 		color: var(--color-Rose-500);
 		@include util.text-preset-5;
 	}
 
-	&__ul {
+	&__list {
 		list-style-type: none;
 		width: util.rem(450);
 	}
 
-	&__li {
+	&__item {
 		display: flex;
 	}
 
-	&__img {
+	&__iconImage {
 		width: util.rem(75);
 		height: util.rem(75);
 	}
 
-	&__p {
+	&__itemDescription {
 		margin-left: util.rem(25);
 		color: var(--color-Neutral-0);
 		height: fit-content;
 		align-self: center;
 	}
 
-	&__img-first {
+	&__backgroundImage--first {
 		position: absolute;
 		top: util.rem(260);
 		left: util.rem(-100);
 	}
 
-	&__img-second {
+	&__backgroundImage--second {
 		position: absolute;
 		bottom: util.rem(0);
 		right: util.rem(-100);
