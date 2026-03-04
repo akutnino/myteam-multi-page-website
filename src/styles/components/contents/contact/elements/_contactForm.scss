@@ -5,7 +5,7 @@
 	flex-direction: column;
 	gap: util.rem(25);
 
-	&__button {
+	&__submitButton {
 		cursor: pointer;
 		color: var(--color-Neutral-0);
 		width: fit-content;
