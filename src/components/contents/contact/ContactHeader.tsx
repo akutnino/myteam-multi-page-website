@@ -13,36 +13,42 @@ function ContactHeader() {
 		<header className='contactHeader'>
 			<Navigation />
 
-			<div className='contactHeader__div'>
+			<div className='contactHeader__wrapper'>
 				<section className='contactHeader__section'>
-					<div className='contactHeader__div--box'>
-						<h1 className='contactHeader__h1'>Contact</h1>
-						<h3 className='contactHeader__h3'>Ask us about</h3>
+					<div className='contactHeader__headerWrapper'>
+						<h1 className='contactHeader__header'>Contact</h1>
+						<h3 className='contactHeader__headerDescription'>Ask us about</h3>
 					</div>
 
-					<ul className='contactHeader__ul'>
-						<li className='contactHeader__li'>
+					<ul className='contactHeader__list'>
+						<li className='contactHeader__item'>
 							<BackgroundImage
-								className='contactHeader__img'
+								className='contactHeader__iconImage'
 								src={icon_person}
 							/>
-							<p className='contactHeader__p'>The quality of our talent network</p>
+							<p className='contactHeader__itemDescription'>
+								The quality of our talent network
+							</p>
 						</li>
 
-						<li className='contactHeader__li'>
+						<li className='contactHeader__item'>
 							<BackgroundImage
-								className='contactHeader__img'
+								className='contactHeader__iconImage'
 								src={icon_cog}
 							/>
-							<p className='contactHeader__p'>Usage & implementation of our software</p>
+							<p className='contactHeader__itemDescription'>
+								Usage & implementation of our software
+							</p>
 						</li>
 
-						<li className='contactHeader__li'>
+						<li className='contactHeader__item'>
 							<BackgroundImage
-								className='contactHeader__img'
+								className='contactHeader__iconImage'
 								src={icon_chart}
 							/>
-							<p className='contactHeader__p'>How we help drive innovation</p>
+							<p className='contactHeader__itemDescription'>
+								How we help drive innovation
+							</p>
 						</li>
 					</ul>
 				</section>
@@ -53,12 +59,12 @@ function ContactHeader() {
 			</div>
 
 			<BackgroundImage
-				className='contactHeader__img-first'
+				className='contactHeader__backgroundImage--first'
 				src={bg_pattern_about_2_contact_1}
 			/>
 
 			<BackgroundImage
-				className='contactHeader__img-second'
+				className='contactHeader__backgroundImage--second'
 				src={bg_pattern_contact_2}
 			/>
 		</header>
