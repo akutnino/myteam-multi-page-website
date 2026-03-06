@@ -41,7 +41,7 @@
 	}
 
 	&__directorStatement {
-		margin: util.rem(20) util.rem(50);
+		margin: util.rem(20) util.rem(30);
 		text-align: center;
 		color: var(--color-Neutral-0);
 		@include util.text-preset-7-semibold;
@@ -96,5 +96,13 @@
 
 	&__buttonImage {
 		margin: auto;
+	}
+}
+
+@media (max-width: util.rem(1400)) {
+	.directorsListItem {
+		&__directorStatement {
+			margin: util.rem(20) util.rem(15);
+		}
 	}
 }
