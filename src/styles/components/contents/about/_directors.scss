@@ -39,3 +39,34 @@
 		right: 0;
 	}
 }
+
+@media (max-width: util.rem(1320)) {
+	.directors {
+		&__header {
+			@include util.text-preset-5;
+		}
+
+		&__list {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
+@media (max-width: util.rem(800)) {
+	.directors {
+		&__wrapper {
+			max-width: 100%;
+			padding: 0 util.rem(20);
+		}
+
+		&__list {
+			grid-template-columns: 1fr;
+		}
+
+		&__backgroundImage--first {
+			position: absolute;
+			top: util.rem(-100);
+			left: util.rem(-100);
+		}
+	}
+}
