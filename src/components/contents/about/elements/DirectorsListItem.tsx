@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 import BackgroundImage from '../../../common/BackgroundImage.tsx';
 
-import twitter_icon from '/src/assets/icon-twitter.svg';
-import linkedin_icon from '/src/assets/icon-linkedin.svg';
-import toggle_icon from '/src/assets/icon-cross.svg';
+import twitter_icon from '/src/assets/icon/icon-twitter.svg';
+import linkedin_icon from '/src/assets/icon/icon-linkedin.svg';
+import toggle_icon from '/src/assets/icon/icon-cross.svg';
 
 function DirectorsListItem({
 	directorImageSrc,

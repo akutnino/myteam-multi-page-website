@@ -1,11 +1,11 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 
-import icon_quotes from '/src/assets/icon-quotes.svg';
-import avatar_kady from '/src/assets/avatar-kady.jpg';
-import avatar_aiysha from '/src/assets/avatar-aiysha.jpg';
-import avatar_arthur from '/src/assets/avatar-arthur.jpg';
-import bg_pattern_home_5 from '/src/assets/bg-pattern-home-5.svg';
-import bg_pattern_home_4_about_3 from '/src/assets/bg-pattern-home-4-about-3.svg';
+import icon_quotes from '/src/assets/icon/icon-quotes.svg';
+import avatar_kady from '/src/assets/avatar/avatar-kady.jpg';
+import avatar_aiysha from '/src/assets/avatar/avatar-aiysha.jpg';
+import avatar_arthur from '/src/assets/avatar/avatar-arthur.jpg';
+import bg_pattern_home_5 from '/src/assets/background/bg-pattern-home-5.svg';
+import bg_pattern_home_4_about_3 from '/src/assets/background/bg-pattern-home-4-about-3.svg';
 
 function Testimonials() {
 	return (

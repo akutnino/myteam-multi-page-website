@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 import ContactButton from './ContactButton.tsx';
 
-import logo from '/src/assets/logo.svg';
+import logo from '/src/assets/logo/logo.svg';
 
 function Navigation() {
 	return (

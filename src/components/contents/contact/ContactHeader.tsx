@@ -2,11 +2,11 @@ import BackgroundImage from '../../common/BackgroundImage.tsx';
 import Navigation from '../../common/Navigation.tsx';
 import ContactForm from './elements/ContactForm.tsx';
 
-import icon_person from '/src/assets/icon-person.svg';
-import icon_cog from '/src/assets/icon-cog.svg';
-import icon_chart from '/src/assets/icon-chart.svg';
-import bg_pattern_about_2_contact_1 from '/src/assets/bg-pattern-about-2-contact-1.svg';
-import bg_pattern_contact_2 from '/src/assets/bg-pattern-contact-2.svg';
+import icon_person from '/src/assets/icon/icon-person.svg';
+import icon_cog from '/src/assets/icon/icon-cog.svg';
+import icon_chart from '/src/assets/icon/icon-chart.svg';
+import bg_pattern_about_2_contact_1 from '/src/assets/background/bg-pattern-about-2-contact-1.svg';
+import bg_pattern_contact_2 from '/src/assets/background/bg-pattern-contact-2.svg';
 
 function ContactHeader() {
 	return (

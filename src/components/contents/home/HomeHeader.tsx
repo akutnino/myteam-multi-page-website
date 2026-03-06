@@ -1,8 +1,8 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 import Navigation from '../../common/Navigation.tsx';
 
-import bg_pattern_home_1 from '/src/assets/bg-pattern-home-1.svg';
-import bg_pattern_home_2 from '/src/assets/bg-pattern-home-2.svg';
+import bg_pattern_home_1 from '/src/assets/background/bg-pattern-home-1.svg';
+import bg_pattern_home_2 from '/src/assets/background/bg-pattern-home-2.svg';
 
 function HomeHeader() {
 	return (

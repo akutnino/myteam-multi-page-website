@@ -1,14 +1,14 @@
 import DirectorsListItem from './elements/DirectorsListItem.tsx';
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 
-import avatar_nikita from '/src/assets/avatar-nikita.jpg';
-import avatar_cristian from '/src/assets/avatar-christian.jpg';
-import avatar_cruz from '/src/assets/avatar-cruz.jpg';
-import avatar_drake from '/src/assets/avatar-drake.jpg';
-import avatar_griffin from '/src/assets/avatar-griffin.jpg';
-import avatar_aden from '/src/assets/avatar-aden.jpg';
-import bg_pattern_home_4_about_3 from '/src/assets/bg-pattern-home-4-about-3.svg';
-import bg_pattern_about_2_contact_1 from '/src/assets/bg-pattern-about-2-contact-1.svg';
+import avatar_nikita from '/src/assets/avatar/avatar-nikita.jpg';
+import avatar_cristian from '/src/assets/avatar/avatar-christian.jpg';
+import avatar_cruz from '/src/assets/avatar/avatar-cruz.jpg';
+import avatar_drake from '/src/assets/avatar/avatar-drake.jpg';
+import avatar_griffin from '/src/assets/avatar/avatar-griffin.jpg';
+import avatar_aden from '/src/assets/avatar/avatar-aden.jpg';
+import bg_pattern_home_4_about_3 from '/src/assets/background/bg-pattern-home-4-about-3.svg';
+import bg_pattern_about_2_contact_1 from '/src/assets/background/bg-pattern-about-2-contact-1.svg';
 
 function Directors() {
 	return (

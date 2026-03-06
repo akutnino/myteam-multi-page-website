@@ -1,9 +1,9 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 
-import icon_person from '/src/assets/icon-person.svg';
-import icon_cog from '/src/assets/icon-cog.svg';
-import icon_chart from '/src/assets/icon-chart.svg';
-import bg_pattern_home_3 from '/src/assets/bg-pattern-home-3.svg';
+import icon_person from '/src/assets/icon/icon-person.svg';
+import icon_cog from '/src/assets/icon/icon-cog.svg';
+import icon_chart from '/src/assets/icon/icon-chart.svg';
+import bg_pattern_home_3 from '/src/assets/background/bg-pattern-home-3.svg';
 
 function Features() {
 	return (

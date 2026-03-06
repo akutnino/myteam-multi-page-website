@@ -1,7 +1,7 @@
 import BackgroundImage from './BackgroundImage.tsx';
 import ContactButton from './ContactButton.tsx';
 
-import bg_pattern_home_6_about_5 from '/src/assets/bg-pattern-home-6-about-5.svg';
+import bg_pattern_home_6_about_5 from '/src/assets/background/bg-pattern-home-6-about-5.svg';
 
 function CallToAction() {
 	return (

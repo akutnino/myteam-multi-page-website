@@ -1,11 +1,11 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 
-import logo_the_verge from '/src/assets/logo-the-verge.png';
-import logo_jakarta_post from '/src/assets/logo-jakarta-post.png';
-import logo_the_guardian from '/src/assets/logo-the-guardian.png';
-import logo_tech_radar from '/src/assets/logo-tech-radar.png';
-import logo_gadgets_now from '/src/assets/logo-gadgets-now.png';
-import bg_pattern_home_3 from '/src/assets/bg-pattern-home-3.svg';
+import logo_the_verge from '/src/assets/logo/logo-the-verge.png';
+import logo_jakarta_post from '/src/assets/logo/logo-jakarta-post.png';
+import logo_the_guardian from '/src/assets/logo/logo-the-guardian.png';
+import logo_tech_radar from '/src/assets/logo/logo-tech-radar.png';
+import logo_gadgets_now from '/src/assets/logo/logo-gadgets-now.png';
+import bg_pattern_home_3 from '/src/assets/background/bg-pattern-home-3.svg';
 
 function Clients() {
 	return (
