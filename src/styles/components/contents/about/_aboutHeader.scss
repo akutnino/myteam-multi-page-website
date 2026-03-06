@@ -45,3 +45,38 @@
 		right: util.rem(-100);
 	}
 }
+
+@media (max-width: util.rem(1220)) {
+	.aboutHeader {
+		&__section {
+			flex-direction: column;
+		}
+
+		&__header,
+		&__description {
+			min-width: 100%;
+			text-align: center;
+		}
+
+		&__rectangle {
+			display: none;
+		}
+
+		&__description {
+			@include util.text-preset-7-semibold;
+		}
+	}
+}
+
+@media (max-width: util.rem(700)) {
+	.aboutHeader {
+		&__section {
+			max-width: 100%;
+			padding: 0 util.rem(20);
+		}
+
+		&__backgroundImage {
+			bottom: util.rem(-100);
+		}
+	}
+}
