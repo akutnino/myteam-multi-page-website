@@ -1,40 +1,38 @@
 import { Link } from 'react-router';
 
 import ContactButton from './ContactButton.tsx';
+import MobileDrawer from './MobileDrawer.tsx';
+import BackgroundImage from './BackgroundImage.tsx';
 
 import logo from '/src/assets/logo/logo.svg';
 
 function Navigation() {
 	return (
 		<nav className='navigation'>
-			<div className='navigation__wrapper'>
-				<img
-					className='navigation__logoImage'
-					src={logo}
-					alt='myteam logo.svg'
-					fetchPriority='high'
-				/>
+			<BackgroundImage
+				className='navigation__logoImage'
+				src={logo}
+			/>
 
-				<ul className='navigation__navlist'>
-					<li className='navigation__navItem'>
-						<Link
-							className='navigation__navLink'
-							to={'/'}
-						>
-							home
-						</Link>
-					</li>
+			<ul className='navigation__navlist'>
+				<li className='navigation__navItem'>
+					<Link
+						className='navigation__navLink'
+						to={'/'}
+					>
+						home
+					</Link>
+				</li>
 
-					<li className='navigation__navItem'>
-						<Link
-							className='navigation__navLink'
-							to={'/about'}
-						>
-							about
-						</Link>
-					</li>
-				</ul>
-			</div>
+				<li className='navigation__navItem'>
+					<Link
+						className='navigation__navLink'
+						to={'/about'}
+					>
+						about
+					</Link>
+				</li>
+			</ul>
 
 			<ContactButton
 				className='navigation__contactButton'
@@ -45,6 +43,8 @@ function Navigation() {
 			>
 				contact us
 			</ContactButton>
+
+			<MobileDrawer />
 		</nav>
 	);
 }
