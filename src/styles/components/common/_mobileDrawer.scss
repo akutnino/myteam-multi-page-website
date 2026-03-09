@@ -1,5 +1,10 @@
 @use '/src/styles/utils/' as util;
 
+// prevent the page from scrolling when a modal is opened.
+html:has(.mobileDrawer__dialog[open]) {
+	overflow: hidden;
+}
+
 .mobileDrawer {
 	&__openButton {
 		display: none;
