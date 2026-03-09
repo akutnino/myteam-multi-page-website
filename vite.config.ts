@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
 	return {
+		base: '/myteam-multi-page-website',
 		plugins: [
 			react({
 				babel: {
