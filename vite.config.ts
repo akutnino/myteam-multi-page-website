@@ -3,8 +3,10 @@ import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
+	const isProduction = mode === 'production';
+
 	return {
-		base: '/myteam-multi-page-website',
+		base: '/myteam-multi-page-website/',
 		plugins: [
 			react({
 				babel: {
@@ -13,7 +15,7 @@ export default defineConfig(({ mode }) => {
 			}),
 		],
 		build: {
-			sourcemap: mode === 'production',
+			sourcemap: !isProduction,
 		},
 	};
 });
