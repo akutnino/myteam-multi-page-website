@@ -46,8 +46,7 @@
 
 @media (max-width: util.rem(800)) {
 	.navigation {
-		max-width: 100%;
-		padding: 0 util.rem(20);
+		max-width: 95%;
 
 		&__logoImage {
 			margin-right: util.rem(0);
@@ -57,5 +56,12 @@
 		&__contactButton {
 			display: none;
 		}
+	}
+}
+
+@media (max-width: util.rem(650)) {
+	.navigation {
+		max-width: 100%;
+		padding: 0 util.rem(20);
 	}
 }
