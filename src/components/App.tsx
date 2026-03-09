@@ -3,13 +3,13 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 
 import Layout from './common/Layout.tsx';
 
-const Home = lazy(() => import('./pages/Home.tsx'));
+export const Home = lazy(() => import('./pages/Home.tsx'));
 const About = lazy(() => import('./pages/About.tsx'));
 const Contact = lazy(() => import('./pages/Contact.tsx'));
 
 function App() {
 	return (
-		<BrowserRouter basename='/myteam-multi-page-website'>
+		<BrowserRouter basename='/myteam-multi-page-website/'>
 			<Routes>
 				<Route
 					path='/'
