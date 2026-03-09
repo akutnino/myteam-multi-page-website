@@ -70,12 +70,9 @@ function DirectorsListItem({
 				title='button'
 				onClick={handleToggle}
 			>
-				<img
+				<BackgroundImage
 					className='directorsListItem__buttonImage'
 					src={toggle_icon}
-					alt='toggle_icon'
-					role='presentation'
-					fetchPriority='high'
 				/>
 			</button>
 		</li>
