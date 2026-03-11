@@ -46,6 +46,7 @@ function MobileDrawer() {
 				type='button'
 				title='button'
 				onClick={handleOpenDialog}
+				aria-label='open modal'
 			>
 				<BackgroundImage
 					className='mobileDrawer__buttonImage'
@@ -56,6 +57,7 @@ function MobileDrawer() {
 			<dialog
 				className={`mobileDrawer__dialog`}
 				ref={dialogRef}
+				role='dialog'
 			>
 				<div className='mobileDrawer__dialogWrapper'>
 					<button
@@ -63,6 +65,7 @@ function MobileDrawer() {
 						type='button'
 						title='button'
 						onClick={handleCloseDialog}
+						aria-label='close modal'
 					>
 						<BackgroundImage
 							className='mobileDrawer__buttonImage'
