@@ -8,11 +8,11 @@ import logo from '/src/assets/logo/logo.svg';
 
 function Navigation() {
 	return (
-		<section
+		<nav
 			className='navigation'
 			role='navigation'
 		>
-			<nav className='navigation__wrapper'>
+			<section className='navigation__wrapper'>
 				<BackgroundImage
 					className='navigation__logoImage'
 					src={logo}
@@ -49,8 +49,8 @@ function Navigation() {
 				</ContactButton>
 
 				<MobileDrawer />
-			</nav>
-		</section>
+			</section>
+		</nav>
 	);
 }
 
