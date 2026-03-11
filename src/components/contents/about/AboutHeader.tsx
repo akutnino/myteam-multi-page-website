@@ -1,13 +1,10 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
-import Navigation from '../../common/Navigation.tsx';
 
 import bg_pattern_about_1_mobile_nav_1 from '/src/assets/background/bg-pattern-about-1-mobile-nav-1.svg';
 
 function AboutHeader() {
 	return (
 		<header className='aboutHeader'>
-			<Navigation />
-
 			<section className='aboutHeader__section'>
 				<h1 className='aboutHeader__header'>About</h1>
 

@@ -1,5 +1,4 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
-import Navigation from '../../common/Navigation.tsx';
 import ContactForm from './elements/ContactForm.tsx';
 
 import icon_person from '/src/assets/icon/icon-person.svg';
@@ -11,8 +10,6 @@ import bg_pattern_contact_2 from '/src/assets/background/bg-pattern-contact-2.sv
 function ContactHeader() {
 	return (
 		<header className='contactHeader'>
-			<Navigation />
-
 			<div className='contactHeader__wrapper'>
 				<section className='contactHeader__section'>
 					<div className='contactHeader__headerWrapper'>
