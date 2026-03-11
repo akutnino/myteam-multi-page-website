@@ -28,8 +28,8 @@ function MobileDrawer() {
 
 		const mediaQuery = window.matchMedia('(min-width: 800px)');
 
-		const handleMediaChange = (event: MediaQueryListEvent) => {
-			if (event.matches || dialogElement.hasAttribute('open')) dialogElement.close();
+		const handleMediaChange = () => {
+			if (dialogElement.hasAttribute('open')) dialogElement.close();
 		};
 
 		mediaQuery.addEventListener('change', handleMediaChange);
