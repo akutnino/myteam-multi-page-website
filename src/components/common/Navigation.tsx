@@ -8,44 +8,49 @@ import logo from '/src/assets/logo/logo.svg';
 
 function Navigation() {
 	return (
-		<nav className='navigation'>
-			<BackgroundImage
-				className='navigation__logoImage'
-				src={logo}
-			/>
+		<section
+			className='navigation'
+			role='navigation'
+		>
+			<nav className='navigation__wrapper'>
+				<BackgroundImage
+					className='navigation__logoImage'
+					src={logo}
+				/>
 
-			<ul className='navigation__navlist'>
-				<li className='navigation__navItem'>
-					<Link
-						className='navigation__navLink'
-						to={'/'}
-					>
-						home
-					</Link>
-				</li>
+				<ul className='navigation__navlist'>
+					<li className='navigation__navItem'>
+						<Link
+							className='navigation__navLink'
+							to={'/'}
+						>
+							home
+						</Link>
+					</li>
 
-				<li className='navigation__navItem'>
-					<Link
-						className='navigation__navLink'
-						to={'/about'}
-					>
-						about
-					</Link>
-				</li>
-			</ul>
+					<li className='navigation__navItem'>
+						<Link
+							className='navigation__navLink'
+							to={'/about'}
+						>
+							about
+						</Link>
+					</li>
+				</ul>
 
-			<ContactButton
-				className='navigation__contactButton'
-				hoverStyles={{
-					backgroundColor: '--color-Neutral-0',
-					color: '--color-Teal-950',
-				}}
-			>
-				contact us
-			</ContactButton>
+				<ContactButton
+					className='navigation__contactButton'
+					hoverStyles={{
+						backgroundColor: '--color-Neutral-0',
+						color: '--color-Teal-950',
+					}}
+				>
+					contact us
+				</ContactButton>
 
-			<MobileDrawer />
-		</nav>
+				<MobileDrawer />
+			</nav>
+		</section>
 	);
 }
 
