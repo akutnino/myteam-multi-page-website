@@ -31,7 +31,7 @@ function Testimonials() {
 						</div>
 						<div className='testimonials__userWrapper'>
 							<div className='testimonials__detailsWrapper'>
-								<h3 className='testimonials__username'>Kady Baker</h3>
+								<h2 className='testimonials__username'>Kady Baker</h2>
 								<h3 className='testimonials__userposition'>
 									Product Manager at Bookmark
 								</h3>
@@ -57,7 +57,7 @@ function Testimonials() {
 						</div>
 						<div className='testimonials__userWrapper'>
 							<div className='testimonials__detailsWrapper'>
-								<h3 className='testimonials__username'>Aiysha Reese</h3>
+								<h2 className='testimonials__username'>Aiysha Reese</h2>
 								<h3 className='testimonials__userposition'>Founder of Manage</h3>
 							</div>
 							<BackgroundImage
@@ -81,7 +81,7 @@ function Testimonials() {
 						</div>
 						<div className='testimonials__userWrapper'>
 							<div className='testimonials__detailsWrapper'>
-								<h3 className='testimonials__username'>Arthur Clarke</h3>
+								<h2 className='testimonials__username'>Arthur Clarke</h2>
 								<h3 className='testimonials__userposition'>Co-founder of MyPhysio</h3>
 							</div>
 							<BackgroundImage
