@@ -16,7 +16,7 @@ function ContactButton({
 	const [isHover, setIsHover] = useState<boolean>(false);
 
 	const handleOnMouseEnter = () => {
-		setIsHover((currentState) => !currentState);
+		setIsHover(true);
 	};
 
 	const handleOnMouseLeave = () => {
