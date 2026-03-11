@@ -1,9 +1,9 @@
 import { lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router';
 
+import Home from './pages/Home.tsx';
 import Layout from './common/Layout.tsx';
 
-export const Home = lazy(() => import('./pages/Home.tsx'));
 const About = lazy(() => import('./pages/About.tsx'));
 const Contact = lazy(() => import('./pages/Contact.tsx'));
 
