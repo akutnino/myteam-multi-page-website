@@ -8,10 +8,7 @@ import logo from '/src/assets/logo/logo.svg';
 
 function Navigation() {
 	return (
-		<nav
-			className='navigation'
-			role='navigation'
-		>
+		<nav className='navigation'>
 			<section className='navigation__wrapper'>
 				<BackgroundImage
 					className='navigation__logoImage'
