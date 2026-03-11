@@ -32,14 +32,14 @@ function DirectorsListItem({
 							src={directorImageSrc}
 						/>
 
-						<h3 className='directorsListItem__directorName'>{directorName}</h3>
+						<h1 className='directorsListItem__directorName'>{directorName}</h1>
 						<p className='directorsListItem__directorPosition'>{directorPosition}</p>
 					</>
 				)}
 
 				{isToggled && (
 					<>
-						<h3 className='directorsListItem__directorName'>{directorName}</h3>
+						<h1 className='directorsListItem__directorName'>{directorName}</h1>
 						<p className='directorsListItem__directorStatement'>
 							“Empowered teams create truly amazing products. Set the north star and let
 							them follow it.”
@@ -69,6 +69,7 @@ function DirectorsListItem({
 				type='button'
 				title='button'
 				onClick={handleToggle}
+				aria-label='toggle button'
 			>
 				<BackgroundImage
 					className='directorsListItem__buttonImage'
