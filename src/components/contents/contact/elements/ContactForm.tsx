@@ -49,11 +49,11 @@ function ContactForm() {
 	};
 
 	const handleOnMouseEnter = () => {
-		setIsHover((currentState) => !currentState);
+		setIsHover(true);
 	};
 
 	const handleOnMouseLeave = () => {
-		setIsHover((currentState) => !currentState);
+		setIsHover(false);
 	};
 
 	const styles: CSSProperties = {
