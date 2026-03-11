@@ -5,10 +5,7 @@ import bg_pattern_home_6_about_5 from '/src/assets/background/bg-pattern-home-6-
 
 function CallToAction() {
 	return (
-		<section
-			className='callToAction'
-			role='region'
-		>
+		<section className='callToAction'>
 			<div className='callToAction__wrapper'>
 				<h1 className='callToAction__heading'>Ready to get started?</h1>
 
